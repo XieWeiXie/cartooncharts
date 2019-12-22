@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<title>Cartoon Charts</title>
+<body>
+<svg class="stacked"></svg>
+<script src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1.12/dist/chart.xkcd.min.js"></script>
+<script>
+    const svg = document.querySelector('.stacked');
+    {{ if eq .Type "Line" }}
+    new chartXkcd.Line(svg, {{ .Interface }});
+    {{else if eq .Type "Bar"}}
+    new chartXkcd.Bar(svg, {{ .Interface }});
+    {{else if eq .Type "XY"}}
+    new chartXkcd.XY(svg, {{ .Interface }});
+    {{else if eq .Type "StackedBar"}}
+    new chartXkcd.StackedBar(svg, {{ .Interface }});
+    {{else if eq .Type "Pie"}}
+    new chartXkcd.Pie(svg, {{ .Interface }});
+    {{else if eq .Type "Radar"}}
+    new chartXkcd.Radar(svg, {{ .Interface }});
+    {{end}}
+
+</script>
+</body>
+
+
+</html>
