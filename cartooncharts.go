@@ -1,7 +1,7 @@
 package cartooncharts
 
 import (
-	"github.com/wuxiaoxiaoshen/cartoonycharts/cartoontransport"
+	"github.com/wuxiaoxiaoshen/cartooncharts/cartoontransport"
 )
 
 type CartoonCharts struct {

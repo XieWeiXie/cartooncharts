@@ -26,9 +26,9 @@ go get -u -v github.com/wuxiaoxiaoshen/cartooncharts
 package _example
 
 import (
-	"github.com/wuxiaoxiaoshen/cartoonycharts"
-	"github.com/wuxiaoxiaoshen/cartoonycharts/cartoon"
-	"github.com/wuxiaoxiaoshen/cartoonycharts/cartoontransport"
+	"github.com/wuxiaoxiaoshen/cartooncharts"
+	"github.com/wuxiaoxiaoshen/cartooncharts/cartoon"
+	"github.com/wuxiaoxiaoshen/cartooncharts/cartoontransport"
 	"log"
 	"net/http"
 	"testing"

@@ -1,4 +1,4 @@
-module github.com/wuxiaoxiaoshen/cartoonycharts
+module github.com/wuxiaoxiaoshen/cartooncharts
 
 go 1.13
 
