@@ -6,7 +6,7 @@ import (
 
 type ChartsInterface interface {
 	Plot(t Transport) func(w http.ResponseWriter, r *http.Request)
-	Save(string) bool
+	Save(string, Transport) bool
 	Render(t Transport) func(w http.ResponseWriter, r *http.Request)
 }
 
@@ -21,6 +21,7 @@ var (
 	stackedBarStackedType string
 	pieStackedType        string
 	radarStackedType      string
+	xyStackedType         string
 )
 
 func init() {
@@ -29,6 +30,7 @@ func init() {
 	stackedBarStackedType = "StackedBar"
 	pieStackedType = "Pie"
 	radarStackedType = "Radar"
+	xyStackedType = "XY"
 }
 
 type Charts struct {
@@ -42,6 +44,11 @@ type Charts struct {
 
 func NewCharts(t Transport) *Charts {
 	return &Charts{
-		Line: newLine(t),
+		Line:       newLine(t),
+		XY:         newXY(t),
+		Bar:        newBar(t),
+		Pie:        newPie(t),
+		StackedBar: newStackedBar(t),
+		Radar:      newRadar(t),
 	}
 }

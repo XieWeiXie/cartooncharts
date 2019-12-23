@@ -1,28 +1,3 @@
-<h1 align="center">CartoonCharts</h1>
-<p align="center">
-  <em>Why CartoonCharts?  Inspired by <a href="https://github.com/timqian/chart.xkcd">chart.xkcd</a>.</em>
-</p>
-<p align="center">
-    <a href="https://github.com/wuxiaoxiaoshen">
-        <img src="https://img.shields.io/badge/Author-wuxiaoxiaoshen-blue" alt="Author">
-    </a>
-    <a href="https://github.com/wuxiaoxiaoshen">
-        <img src="https://img.shields.io/badge/progressing-85%25-red" alt="Author">
-    </a>
-</p>
-
-> Cartoon Charts ...
----
-> Program to an interface, not an implementation
-
-## Install
-```
-go get -u -v github.com/wuxiaoxiaoshen/cartooncharts
-```
-
-## Demo
-
-```go
 package main
 
 import (
@@ -120,45 +95,3 @@ func main() {
 	ExampleRadar()
 	log.Fatal(http.ListenAndServe(":9090", nil))
 }
-
-```
-
-In your browser. You will see:
-
-```text
-http://localhost:9090/bar
-http://localhost:9090/xy
-http://localhost:9090/stackedBar
-http://localhost:9090/line
-http://localhost:9090/pie
-http://localhost:9090/radar
-
-```
-
-<div align="center">
-    <img src="http://ww1.sinaimg.cn/large/741fdb86gy1ga6hcr9vykj213x0m5dgv.jpg" width="33%"/>
-    <img src="http://ww1.sinaimg.cn/large/741fdb86gy1ga6hcrbr1qj213v0m33zk.jpg" width="33%"/>
-    <img src="http://ww1.sinaimg.cn/large/741fdb86gy1ga6hcrczjlj213y0m3wfu.jpg" width="33%"/>
-    <img src="http://ww1.sinaimg.cn/large/741fdb86gy1ga6hcrjvvfj213v0m1gnj.jpg" width="33%"/>
-    <img src="http://ww1.sinaimg.cn/large/741fdb86gy1ga6hcrmlw7j213y0m3dhx.jpg" width="33%"/>
-    <img src="http://ww1.sinaimg.cn/large/741fdb86gy1ga6hcrshz0j213y0m50vb.jpg" width="33%"/>
-</div>
-
-
-
-
-
-
-## TODO
-
-- [x] Bar
-- [x] Pie
-- [x] Radar
-- [x] StackedBar
-- [x] XY
-- [x] Line
-
-## License
-
-MIT [©wuxiaoxiaoshen](https://github.com/wuxiaoxiaoshen)
-

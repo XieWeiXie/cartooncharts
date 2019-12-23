@@ -5,11 +5,11 @@ type WithTitle struct {
 }
 
 type WithXLabel struct {
-	XLabel string `json:"xLabel"`
+	XLabel string `json:"xLabel,omitempty"`
 }
 
 type WithYLabel struct {
-	YLabel string `json:"yLabel"`
+	YLabel string `json:"yLabel,omitempty"`
 }
 
 type WithDataCollection struct {
@@ -27,7 +27,7 @@ type WithDataDataSets struct {
 }
 
 type WithOption struct {
-	Options map[string]interface{}
+	Options map[string]interface{} `json:"options,omitempty"`
 }
 
 func (W WithOption) Set(key string, value interface{}) {

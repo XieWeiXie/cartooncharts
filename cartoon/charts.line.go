@@ -39,7 +39,7 @@ func (L LineRequest) Plot(t Transport) func(w http.ResponseWriter, r *http.Reque
 	}
 }
 
-func (L LineRequest) Save(name string) bool {
+func (L LineRequest) Save(name string, transport Transport) bool {
 	return true
 }
 
