@@ -17,7 +17,7 @@
 
 ## Install
 ```
-go get -u -v github.com/wuxiaoxiaoshen/cartooncharts
+go get -u -v github.com/XieWeiXie/cartooncharts
 ```
 
 ## Demo
@@ -26,7 +26,7 @@ go get -u -v github.com/wuxiaoxiaoshen/cartooncharts
 package main
 
 import (
-	"github.com/wuxiaoxiaoshen/cartooncharts"
+	"github.com/XieWeiXie/cartooncharts"
 	"log"
 	"net/http"
 )
