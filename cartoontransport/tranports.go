@@ -1,7 +1,7 @@
 package cartoontransport
 
 import (
-	"github.com/wuxiaoxiaoshen/cartooncharts/cartoon"
+	"github.com/XieWeiXie/cartooncharts/cartoon"
 	"net/http"
 )
 

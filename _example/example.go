@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/wuxiaoxiaoshen/cartooncharts"
+	"github.com/XieWeiXie/cartooncharts"
 	"log"
 	"net/http"
 )
